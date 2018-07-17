@@ -2,6 +2,14 @@
   margin: 0;
   font-family: 'Trykker', serif;
 }
+.line-div{
+  border-top: 4px solid rgba(0,0,0,0.3);
+  margin: 0 auto;
+}
+.line-div-dark{
+  border-top: 4px solid rgba(255,255,255,0.3);
+  margin: 0 auto;
+}
 
 /* seccion HOME */
 
@@ -86,5 +94,125 @@
   }
   #home .social a{
     font-size: 1.5rem;
+  }
+}
+
+/* sección sobre mi  */
+
+#about{
+  background-color: #f5f5f2;
+  padding: 50px 10px;
+}
+#about .text-title{
+  font-size: 1.8rem;
+  text-shadow: -2px -2px 2px rgba(0,0,0,0.3);
+  padding-bottom: 50px;
+  padding: 10px;
+  text-align: center;
+}
+.photo img{
+  height: 180px;
+  width: 180px;
+  display: flex;
+  margin: 20px auto;
+  border: 4px solid rgba(0,0,0,0.3);
+}
+.info{
+  text-align: justify;
+}
+
+@media (min-width:576px){
+  #about{
+    padding: 80px 10px;
+  }
+  #about .text-title{
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  .photo img{
+    height: 180px;
+    width: 150px;
+  }
+}
+@media (min-width:768px){
+  #about .text-title{
+    font-size: 2.3rem;
+    padding-bottom: 30px;
+  }
+  .photo img{
+    height: 250px;
+    width: 200px;
+  }
+}
+@media (min-width:992px){
+  #about{
+    padding: 100px
+  }
+  #about .text-title{
+    font-size: 2.5rem;
+    padding-bottom: 50px;
+  }
+  .photo img{
+    height: 250px;
+    width: 250px;
+  }
+}
+
+/* SECCION  SKILLS */
+
+#skills{
+  background-color: #303030;
+  padding: 50px 10px;
+  color: #fff;
+}
+#skills .text-title{
+  font-size: 1.8rem;
+  text-shadow: -2px -2px 2px rgba(255,255,255,0.3);
+  padding-bottom: 50px;
+  padding: 10px;
+  text-align: center;
+}
+.cont{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.skills {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 15px;
+  color: #000;
+  text-shadow: -1px -1px 1px #FFF;
+}
+.html {width: 80%; height: 20px; background-color: #E5E1DA;}
+.css {width: 80%; height: 20px; background-color: #403E3D;}
+.bootstrap {width: 90%; height: 20px; background-color: #FFFAF2;}
+.git {width: 90%; height: 20px; background-color: #7F7D79;}
+.ruby {width: 80%; height: 20px; background-color: #BFBBB6;}
+.rails {width: 80%; height: 20px; background-color: #403E3D;}
+.js {width: 70%; height: 20px; background-color: #E5E1DA;}
+
+@media (min-width:576px){
+  #skills{
+    padding: 80px 10px;
+  }
+  #skills .text-title{
+    font-size: 1.5rem;
+    padding: 0;
+  }
+}
+@media (min-width:768px){
+  #skills .text-title{
+    font-size: 2.3rem;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width:992px){
+  #skills{
+    padding: 100px
+  }
+  #skills .text-title{
+    font-size: 2.5rem;
+    padding-bottom: 50px;
+    text-align: justify;
   }
 }
