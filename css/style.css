@@ -2,6 +2,9 @@
   margin: 0;
   font-family: 'Trykker', serif;
 }
+
+/* ***************UTILES**************** */
+
 .line-div{
   border-top: 4px solid rgba(0,0,0,0.3);
   margin: 0 auto;
@@ -11,7 +14,7 @@
   margin: 0 auto;
 }
 
-/* seccion HOME */
+/* ===================SECCION HOME================== */
 
 #home{
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('../images/cover1.jpg') no-repeat center top;
@@ -97,7 +100,7 @@
   }
 }
 
-/* sección sobre mi  */
+/* ===================sección sobre mi==================  */
 
 #about{
   background-color: #f5f5f2;
@@ -158,7 +161,7 @@
   }
 }
 
-/* SECCION  SKILLS */
+/* ===================SECCION  SKILLS================= */
 
 #skills{
   background-color: #303030;
@@ -171,6 +174,9 @@
   padding-bottom: 50px;
   padding: 10px;
   text-align: center;
+}
+#skills .line-div-dark{
+  padding-bottom: 15px;
 }
 .cont{
   width: 100%;
@@ -199,6 +205,9 @@
     font-size: 1.5rem;
     padding: 0;
   }
+  #skills .line-div-dark{
+    padding-bottom: 0;
+  }
 }
 @media (min-width:768px){
   #skills .text-title{
@@ -214,5 +223,216 @@
     font-size: 2.5rem;
     padding-bottom: 50px;
     text-align: justify;
+  }
+}
+
+
+/* ===============SECCION ESTUDIO=================== */
+
+#study{
+  background-color: #f5f5f2;
+  padding: 50px 10px;
+}
+#study .text-title{
+  font-size: 1.8rem;
+  text-shadow: -2px -2px 2px rgba(0,0,0,0.3);
+  padding-bottom: 50px;
+  padding: 10px;
+  text-align: center;
+}
+#study .title-study{
+  text-shadow: -2px -2px 2px rgba(0,0,0,0.3);
+  padding-top: 20px;
+}
+#study .line-div{
+  padding-bottom: 15px;
+}
+
+@media (min-width:576px){
+  #study{
+    padding: 80px 10px;
+  }
+  #study .text-title{
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  #study .title-study{
+    padding-top: 0;
+  }
+  #study .line-div{
+    padding-bottom: 0;
+  }
+}
+@media (min-width:768px){
+  #study .text-title{
+    font-size: 2.3rem;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width:992px){
+  #study{
+    padding: 100px
+  }
+  #study .text-title{
+    font-size: 2.5rem;
+    padding-bottom: 50px;
+    text-align: justify;
+  }
+
+}
+
+
+/* ================SECCION PORTAFOLIO=============== */
+
+#portfolio{
+  background-color: #303030;
+  padding: 50px 10px;
+  color: #fff;
+}
+#portfolio .text-title{
+  font-size: 1.8rem;
+  text-shadow: -2px -2px 2px rgba(0,0,0,0.3);
+  padding-bottom: 50px;
+  padding: 10px;
+  text-align: center;
+}
+#portfolio .line-div-dark{
+  padding-bottom: 15px;
+}
+.project img{
+  display: inline-block;
+  margin: 12px auto;
+  border: 4px solid rgba(255,255,255,0.3);
+  border-radius: 3px;
+}
+
+
+@media (min-width:576px){
+  #portfolio{
+    padding: 80px 10px;
+  }
+  #portfolio .text-title{
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  #portfolio .line-div-dark{
+    padding-bottom: 0;
+  }
+  .project img{
+    margin: 20px;
+  }
+}
+@media (min-width:768px){
+  #portfolio .text-title{
+    font-size: 2.3rem;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width:992px){
+  #portfolio{
+    padding: 100px
+  }
+  #portfolio .text-title{
+    font-size: 2.5rem;
+    padding-bottom: 50px;
+    text-align: justify;
+  }
+}
+
+
+/* =========================BANNER=================== */
+
+#banner{
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('../images/coverw.jpg') no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  padding: 150px 20px;
+  text-align: center;
+  font-style: italic;
+}
+#banner h2{
+  font-size: 2rem;
+}
+#banner h3{
+  font-size: 1.3rem;
+}
+
+@media (min-width:576px){
+  #banner{
+    padding: 250px 20px
+  }
+  #banner h2{
+    font-size: 2.3rem;
+  }
+  #banner h3{
+    font-size: 1.75rem;
+  }
+}
+
+
+/* ==================seccion Contacto==================== */
+
+
+#contact{
+  background: #303030;
+  padding: 30px 0 ;
+  color: #fff;
+  text-shadow: -2px -2px 2px rgba(0,0,0,0.3);
+}
+#contact .text-title{
+  font-size: 1.7rem;
+  text-shadow: -2px -2px 2px rgba(0,0,0,0.3);
+  padding: 20px 0;
+}
+#contact .contact-text{
+  padding-top: 50px 0;
+  font-size: 1rem;
+}
+#contact .line-div-dark{
+  padding-bottom: 15px;
+}
+#contact .social a{
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  color: #fff;
+  text-shadow: -3px -3px 2px #000;
+}
+#contact .social a:hover{
+  text-shadow: 2px 2px 1px #fff;
+  color: #000;
+  background: rgba(255, 255, 255, 0);
+  transform: scale(1.5);
+  transition: transform 3s ;
+}
+#legal{
+  background: #303030;
+  border-top: solid 1px #949791 ;
+  color: #fff ;
+  padding: 5px;
+  width: 100%;
+}
+
+
+
+@media (min-width:576px) {
+  #contact{
+    padding: 80px 100px 100px 80px ;
+  }
+  #contact .contact-text{
+    padding-top: 50px;
+    padding-left: 100px;
+    text-align: left;
+  }
+  #contact .text-title{
+    font-size: 2.3rem;
+    padding: 10px 0;
+  }
+  #contact .social a{
+    font-size: 1.3rem;
   }
 }
