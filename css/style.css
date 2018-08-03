@@ -189,13 +189,13 @@
   color: #000;
   text-shadow: -1px -1px 1px #FFF;
 }
-.html {width: 80%; height: 20px; background-color: #E5E1DA;}
-.css {width: 80%; height: 20px; background-color: #403E3D;}
-.bootstrap {width: 90%; height: 20px; background-color: #FFFAF2;}
-.git {width: 90%; height: 20px; background-color: #7F7D79;}
-.ruby {width: 80%; height: 20px; background-color: #BFBBB6;}
-.rails {width: 80%; height: 20px; background-color: #403E3D;}
-.js {width: 70%; height: 20px; background-color: #E5E1DA;}
+.html {width: 0%; height: 20px; background-color: #E5E1DA;}
+.css {width: 0%; height: 20px; background-color: #403E3D;}
+.bootstrap {width: 0%; height: 20px; background-color: #FFFAF2;}
+.git {width: 0%; height: 20px; background-color: #7F7D79;}
+.ruby {width: 0%; height: 20px; background-color: #BFBBB6;}
+.rails {width: 0%; height: 20px; background-color: #403E3D;}
+.js {width: 0%; height: 20px; background-color: #E5E1DA;}
 
 @media (min-width:576px){
   #skills{
@@ -299,6 +299,9 @@
 #portfolio .line-div-dark{
   padding-bottom: 15px;
 }
+.project{
+  position: relative;
+}
 .project img{
   display: inline-block;
   margin: 12px auto;
@@ -318,9 +321,6 @@
   #portfolio .line-div-dark{
     padding-bottom: 0;
   }
-  .project img{
-    margin: 20px;
-  }
 }
 @media (min-width:768px){
   #portfolio .text-title{
@@ -339,7 +339,55 @@
   }
 }
 
+/* hover projects */
+.project-cont {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(48,48,48,0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+}
 
+.project:hover .project-cont {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.project-cont-text {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.project-pag{
+  font-size: 13px;
+  color: #fff;
+  padding: 5px 15px;
+  background-color: #303030;
+  border: 0.5px solid #fff;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+.project-pag:hover{
+  text-decoration: none;
+  color: #fff;
+}
 /* =========================BANNER=================== */
 
 #banner{
@@ -435,4 +483,18 @@
   #contact .social a{
     font-size: 1.3rem;
   }
+}
+
+/* ==================== Adicionales =================== */
+
+/* boton scrollup */
+
+#js_up{
+  display: none;
+  position: absolute;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.8;
+  cursor: pointer;
 }
