@@ -42,6 +42,9 @@ $(window).scroll(function(){
       setInterval(function(){
         $('.js').animate({'width':'0%'}).animate({'width':'60%'}, 1000).delay(90000);
       });
+      setInterval(function(){
+        $('.vue').animate({'width':'0%'}).animate({'width':'50%'}, 1000).delay(90000);
+      });
     });
   }
 });

@@ -196,6 +196,7 @@
 .ruby {width: 0%; height: 20px; background-color: #BFBBB6;}
 .rails {width: 0%; height: 20px; background-color: #403E3D;}
 .js {width: 0%; height: 20px; background-color: #E5E1DA;}
+.vue {width: 0%; height: 20px; background-color: #403E3D;}
 
 @media (min-width:576px){
   #skills{
